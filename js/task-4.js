@@ -8,6 +8,8 @@ const btnSubmit = document.querySelector('button');
 const label = document.querySelector('label');
 
 
+//console.log(emailInput);
+
 emailInput.classList.add('email');
 passwordInput.classList.add('password');
 btnSubmit.classList.add('form-submit');
@@ -66,7 +68,6 @@ passwordInput.addEventListener('input', function () {
 	}
 });
 
-console.log(emailInput);
 function handleSubmit(event) {
 	event.preventDefault();
 

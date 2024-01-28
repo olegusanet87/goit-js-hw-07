@@ -34,4 +34,4 @@ items.forEach(item => {
 	console.log(categoryTitle);
 	console.log(categoryItemsTotal);
 
-})
+});
