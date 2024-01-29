@@ -68,6 +68,7 @@ passwordInput.addEventListener('input', function () {
 	}
 });
 
+loginForm.addEventListener("submit", handleSubmit);
 function handleSubmit(event) {
 	event.preventDefault();
 
@@ -88,4 +89,3 @@ function handleSubmit(event) {
 	console.log(loginData);
 	this.reset();
 }
-

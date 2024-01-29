@@ -31,6 +31,16 @@ const images = [
 const gallery = document.querySelector('.gallery');
 //console.log(gallery);
 
+const galleryMarkup = images.map(image => `
+  <li class="gallery-item">
+    <img src="${image.url}" alt="${image.alt}" style="width: 360px; height: 300px;">
+  </li>
+`).join('');
+
+gallery.innerHTML = galleryMarkup;
+
+
+/* first attempt
 images.forEach(image => {
   const galleryItem = document.createElement('li');
   galleryItem.classList.add('gallery-item');
@@ -45,3 +55,4 @@ images.forEach(image => {
   galleryItem.appendChild(img);
   gallery.appendChild(galleryItem);
 });
+*/
