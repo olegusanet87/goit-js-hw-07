@@ -39,20 +39,3 @@ const galleryMarkup = images.map(image => `
 
 gallery.innerHTML = galleryMarkup;
 
-
-/* first attempt
-images.forEach(image => {
-  const galleryItem = document.createElement('li');
-  galleryItem.classList.add('gallery-item');
-  //console.log(galleryItem);
-
-  const img = document.createElement('img');
-  img.src = image.url;
-  img.alt = image.alt;
-  img.style.width = '360px';
-  img.style.height = '300px';
-
-  galleryItem.appendChild(img);
-  gallery.appendChild(galleryItem);
-});
-*/
